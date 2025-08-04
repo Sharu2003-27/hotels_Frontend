@@ -132,8 +132,8 @@ import React, { useState } from "react"
                 <label htmlFor="isWifiAvailable">Is Wifi Available:</label>
                 <br /> <br />
 
-                <input type="checkbox" name="isPoolAvailable" checked={formData.isPoolAvailable} onChange={handleChange} />
-                <label htmlFor="isPoolAvailable">Is Pool Available:</label>
+                <input type="checkbox" name="isPoolAvailabe" checked={formData.isPoolAvailabe} onChange={handleChange} />
+                <label htmlFor="isPoolAvailabe">Is Pool Available:</label>
                 <br /> <br />
 
                 <input type="checkbox" name="isSpaAvailable" checked={formData.isSpaAvailable} onChange={handleChange} />
@@ -153,7 +153,6 @@ import React, { useState } from "react"
             </form>
         </div>
     )
-
  }
 
  export default AddHotelForm
