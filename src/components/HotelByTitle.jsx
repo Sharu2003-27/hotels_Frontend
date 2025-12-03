@@ -1,6 +1,3 @@
-
-
-
 import useFetch from "../useFetch" 
 
 const HotelByTitle = ({name}) => {

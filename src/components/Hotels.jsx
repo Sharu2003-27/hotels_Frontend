@@ -4,6 +4,8 @@ import useFetch from "../useFetch"
 const Hotels = () => {
     const [successMessage, setSuccessMessage] = useState("")
     const {data, loading, error } = useFetch("https://be-4-4-hw-2-hotels-be.vercel.app/hotels")
+    console.log(data);
+    
     console.log(error);
 
     const handleDelete = async (hotelId) => {
