@@ -38,40 +38,30 @@ Watch a walkthrough (4 min) of all major features of this app:
 
 ## Features
 
-* AddHotelForm
-* Hotels
-* HotelByTitle
+**Hotel Management**
+- Allows users to add new hotels using a dedicated form
+- Displays a list of all hotels fetched from the backend
+- Fetches and displays hotel details by hotel title
 
-### 2. **useFetch.js** (Custom Hook)
+**Custom Hook – useFetch**
+- Fetches data from backend APIs
+- Manages loading and error states
+- Automatically refetches data when the API URL changes
 
-Handles API fetching with:
+**Add Hotel Form**
+- Collects hotel details using controlled form inputs
+- Manages form state using React useState
+- Sends a POST request to create a new hotel
+- Handles text inputs, dropdowns, and checkboxes
 
-* `data`
-* `loading`
-* `error`
+**Hotels Listing**
+- Displays all hotels using data fetched through the custom hook
+- Deletes a hotel using a DELETE API request
+- Shows a success message after successful deletion
 
-Automatically fetches again when URL changes.
-
-### 3. **AddHotelForm.jsx**
-
-A complete hotel form that:
-
-* Uses `useState` to manage form data
-* Sends POST request to the backend API
-* Handles checkbox, select, and text fields
-
-### 4. **Hotels.jsx**
-
-Displays all hotels fetched using **useFetch**.
-Includes:
-
-* Delete button (DELETE request)
-* Success message
-
-### 5. **HotelByTitle.jsx**
-
-* Fetches a single hotel by name using **useFetch**.
-Displays hotel details if available.
+**Hotel By Title**
+- Fetches hotel details by hotel name using the custom hook
+- Displays hotel information when data is available
 
 ---
 
